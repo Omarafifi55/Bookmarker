@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- link font -->
+
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="main py-5 position-relative">
+      <div class="container d-flex justify-content-center flex-column align-items-center">
+        <h1 class="text-center py-2">Bookmarker</h1>
+
+        <div class="book py-5  d-flex justify-content-center align-items-center flex-column gap-3  w-75">
+          <h2><i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+          </h2>
+          <div class="w-100">
+            <label for="name" class="p-1"><i class="fa-solid fa-book-bookmark"></i>Site Name </label>
+            <input type="text" id="name" placeholder="Bookmark Name" class="inp-na form-control p-1 m-2">
+            <label for="url" class="p-1"><i class="fa-solid fa-link"></i>Site URL
+            </label>
+            <input type="url" id="url" placeholder="Bookmark Name" class="inp-na form-control p-1">
+            
+          </div>
+          <button class="sub btn" onclick="getvalue()">Submit</button>
+
+
+        </div>
+        <table class="bg-light text-center  table m-5">
+          <thead>
+            <tr>
+              <th>Index</th>
+              <th>Website Name</th>
+              <th>Visit</th>
+              <th>Delete</th>
+            </tr>
+            
+          </thead>
+          <tbody id="tableContent">
+            
+          </tbody>
+        </table>
+
+      </div>
+      <div id="alarm" class="box-info position-absolute start-0 top-0 w-100 h-100  justify-content-center align-items-center d-none">
+        <div class="box-conent bg-white p-4 rounded-2 shadow-lg">
+          <header class="box-header w-100 d-flex justify-content-between align-items-center mb-4">
+            <div class="circles d-flex">
+              <span class="rounded-circle me-2"></span>
+              <span class="rounded-circle me-2"></span>
+              <span class="rounded-circle me-2"></span>
+            </div>
+            <button class="btn border-0" id="closeBtn" onclick="gclose()">
+              <i class="fa-solid fa-xmark close fs-3"></i>
+            </button>
+          </header>
+          <p class="m-0 pb-2">
+            Site Name or Url is not valid, Please follow the rules below :
+          </p>
+          <ol class="rules list-unstyled m-0">
+            <li>
+              <i class="fa-regular fa-circle-right p-2"></i>Site name must
+              contain at least 3 characters
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-right p-2"></i>Site URL must be a
+              valid one
+            </li>
+          </ol>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+       <script src="./js/bootstrap.bundle.min.js"></script>
+       <script src="./js/mai.js"></script>
+  </body>
+</html>

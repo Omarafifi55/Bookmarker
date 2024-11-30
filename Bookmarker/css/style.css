@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(247, 236, 222);
+}
+
+h1{
+    color: #352e28;
+    font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+    isolation: isolate;
+
+}
+h2{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.book{
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+}
+.inp-na:focus{
+    background-color: #fff;
+    border-color: #d99c39;
+    
+    box-shadow: 0 0 0 0.25rem #fec26055;
+ }
+    .sub{
+        background-color: tomato;
+        width: 130px;
+    }
+    .sub:hover{
+        background-color: rgb(140, 56, 42) ;
+    }
+
